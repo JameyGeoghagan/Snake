@@ -1,0 +1,20 @@
+﻿@{
+    ViewData["Title"] = "Snake Game";
+}
+
+<link rel="stylesheet" href="~/css/styles.css">
+
+<div id="gameContainer">
+    <h1 id="gameTitle">@ViewData["Title"]</h1>
+    <canvas id="gameCanvas" width="400" height="400"></canvas>
+    <div id="scoreContainer">
+        <span id="scoreLabel">Score:</span>
+        <span id="score">0</span>
+    </div>
+    <div id="highScoreContainer">
+        <span id="highScoreLabel">High Score:</span>
+        <span id="highScore">0</span>
+    </div>
+</div>
+
+<script src="~/js/snake.js"></script>
